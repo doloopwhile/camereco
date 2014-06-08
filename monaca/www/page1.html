@@ -1,14 +1,17 @@
 <ons-page class="center"  ng-controller="Page1Controller">
-
-    <ons-navigator-toolbar
-    	title="Welcome">		
+    <ons-navigator-toolbar title="Welcome">
 	</ons-navigator-toolbar>
 
     <h1>Page 1</h1>
-
+    
 	<ons-button ng-click="ons.navigator.pushPage('page2.html')">Push Page 2</ons-button>	
     
     <ons-button ng-click="takePhoto()">Camera</ons-button>
+    
+    <ons-button ng-click="recordVoice()">Record</ons-button>
+    <ons-button ng-click="playVoice()">Play</ons-button>
+    
+    <span>REC: {{recTime | formatDuration }}/6.00</span>
     
     <img ng-src="{{imageData}}"></img>
 </ons-page>

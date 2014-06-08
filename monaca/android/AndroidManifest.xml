@@ -12,6 +12,10 @@
   <uses-feature android:name="android.hardware.location" android:required="false"/>
   <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
   <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
   <application android:hardwareAccelerated="false" android:icon="@drawable/icon" android:label="%%%APPLICATION_NAME%%%" android:name="mobi.monaca.framework.MonacaApplication">
     <activity android:name="mobi.monaca.framework.MonacaNotifActivity" android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale">
         </activity>
