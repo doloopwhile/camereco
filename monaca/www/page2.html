@@ -1,7 +1,12 @@
-<ons-page class="center">
+<ons-page class="center" ng-controller="Page1Controller">
     
 	<ons-navigator-toolbar
 		title="Page 2">		
 	</ons-navigator-toolbar>
 	<h2>Page 2</h2>
+  
+  <div ng-repeat="photo in photos">
+  <span>{{photo</span>
+    <img src="data:image/jpeg;base64,{{photo.photo_data}}" />
+  </div>
 </ons-page>
